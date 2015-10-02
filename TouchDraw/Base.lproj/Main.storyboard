@@ -130,6 +130,21 @@
                                                         <action selector="undoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSg-sT-UKM"/>
                                                     </connections>
                                                 </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0Z-Q2-2qL" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="52" width="292" height="38"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                                            <real key="value" value="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                         </view>
                                         <blurEffect style="extraLight"/>
@@ -169,6 +184,7 @@
                     <connections>
                         <outlet property="controlPanelTop" destination="83h-WS-8IC" id="GWr-wb-Xov"/>
                         <outlet property="controlPanelView" destination="YJN-Aa-dVR" id="QaA-pZ-Yxc"/>
+                        <outlet property="toggleButton" destination="WbA-WE-c4V" id="qw3-w5-KTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

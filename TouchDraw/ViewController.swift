@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var controlPanelView: UIView!
     
+    @IBOutlet weak var toggleButton: ToggleButton!
     @IBAction func toggleControlPanel(sender: AnyObject) {
         
         controlPanelTop.constant = controlPanelView.frame.origin.y == 0 ? -200 : 0
@@ -25,9 +26,20 @@ class ViewController: UIViewController {
         
         view.setNeedsUpdateConstraints()
         
+        let degrees: CGFloat = controlPanelView.frame.origin.y == 0 ? 0 : 180
+        
         UIView.animateWithDuration(0.4) { () -> Void in
             
             self.view.layoutIfNeeded()
+            
+            
+            let degreesToRadians: (CGFloat) -> CGFloat = {
+                return $0 / 180.0 * CGFloat(M_PI)
+                
+            }
+            
+            let t = CGAffineTransformMakeRotation(degreesToRadians(degrees));
+            self.toggleButton.transform = t
             
             
             
@@ -39,6 +51,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        controlPanelTop.constant = -200
         
         
         // Do any additional setup after loading the view, typically from a nib.
