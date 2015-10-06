@@ -45,13 +45,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-xj-A2t">
-                                                    <rect key="frame" x="15" y="160" width="40" height="40"/>
-                                                    <state key="normal" title="L"/>
-                                                    <connections>
-                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lD-41-LMw"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-dy-3ec">
                                                     <rect key="frame" x="71" y="160" width="40" height="40"/>
                                                     <state key="normal" title="S"/>
@@ -80,13 +73,6 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOO-Kd-eqG"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3N2-05-lIh">
-                                                    <rect key="frame" x="61" y="0.0" width="61" height="44"/>
-                                                    <color key="backgroundColor" red="1" green="0.65161732777462267" blue="0.14305658100330654" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqA-Ly-k6b"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9f-pi-PUp">
                                                     <rect key="frame" x="133" y="160" width="40" height="40"/>
                                                     <state key="normal" title="C"/>
@@ -94,32 +80,11 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJw-lH-dXr"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMS-st-Ydh">
-                                                    <rect key="frame" x="123" y="0.0" width="61" height="44"/>
-                                                    <color key="backgroundColor" red="0.66666666669999997" green="0.2997699225007901" blue="0.35778630782565579" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQm-cw-KeY"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhA-Y6-k43">
-                                                    <rect key="frame" x="181" y="0.0" width="61" height="44"/>
-                                                    <color key="backgroundColor" red="0.25785388465023568" green="0.25435184886886503" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4DI-Nc-Y1t"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-84-cx1">
                                                     <rect key="frame" x="154" y="90" width="115" height="51"/>
                                                     <state key="normal" title="Clear"/>
                                                     <connections>
                                                         <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLQ-Zw-chj"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr1-JR-Uia">
-                                                    <rect key="frame" x="0.0" y="0.0" width="61" height="44"/>
-                                                    <color key="backgroundColor" red="0.33457630199999999" green="0.66666666669999997" blue="0.47705026690000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IOh-e1-1Pk"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-ks-bb6">
@@ -131,7 +96,7 @@
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0Z-Q2-2qL" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
-                                                    <rect key="frame" x="15" y="52" width="292" height="38"/>
+                                                    <rect key="frame" x="15" y="64" width="292" height="26"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="value">
@@ -145,6 +110,41 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dhs-ui-sZI">
+                                                    <rect key="frame" x="47" y="1" width="265" height="43"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jtp-Qy-CL5">
+                                                        <size key="itemSize" width="40" height="40"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="X3c-IN-cvi">
+                                                            <rect key="frame" x="0.0" y="1.5" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-xj-A2t">
+                                                    <rect key="frame" x="15" y="147" width="40" height="40"/>
+                                                    <state key="normal" title="L" image="line"/>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lD-41-LMw"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-3I-zpd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="toggleFillStroke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCL-Ez-A3I"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <blurEffect style="extraLight"/>
@@ -182,6 +182,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="colorPallete" destination="dhs-ui-sZI" id="Fmg-LA-6aj"/>
                         <outlet property="controlPanelTop" destination="83h-WS-8IC" id="GWr-wb-Xov"/>
                         <outlet property="controlPanelView" destination="YJN-Aa-dVR" id="QaA-pZ-Yxc"/>
                         <outlet property="toggleButton" destination="WbA-WE-c4V" id="qw3-w5-KTn"/>
@@ -189,7 +190,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="347" y="214"/>
+            <point key="canvasLocation" x="139" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="line" width="84" height="84"/>
+    </resources>
 </document>

@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		3D1B59141BBD7DEA009F34E7 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		3D1B59381BBF073B009F34E7 /* TouchSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSlider.swift; sourceTree = "<group>"; };
+		3D1B593A1BBF1A8B009F34E7 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		3D9951651BBC18EB00350EDF /* TouchDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9951681BBC18EB00350EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D99516A1BBC18EB00350EDF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 				3D1B59381BBF073B009F34E7 /* TouchSlider.swift */,
 				3D99516A1BBC18EB00350EDF /* ViewController.swift */,
 				3D99516C1BBC18EB00350EDF /* Main.storyboard */,
+				3D1B593A1BBF1A8B009F34E7 /* MyPlayground.playground */,
 				3D99516F1BBC18EB00350EDF /* Assets.xcassets */,
 				3D9951711BBC18EB00350EDF /* LaunchScreen.storyboard */,
 				3D9951741BBC18EB00350EDF /* Info.plist */,

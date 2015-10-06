@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate {
     
     
     @IBOutlet weak var controlPanelTop: NSLayoutConstraint!
     
+    @IBOutlet weak var colorPallete: UICollectionView!
+    
+    @IBAction func toggleFillStroke(sender: AnyObject) {
+        
+        colorSource.isFill = !colorSource.isFill
+        
+        colorPallete.reloadData()
+        
+    }
     
     @IBOutlet weak var controlPanelView: UIView!
     
     @IBOutlet weak var toggleButton: ToggleButton!
+    
     @IBAction func toggleControlPanel(sender: AnyObject) {
         
         controlPanelTop.constant = controlPanelView.frame.origin.y == 0 ? -200 : 0
-        
-        
-        self.controlPanelTop.constant = self.controlPanelView.frame.origin.y == 0 ? -200 : 0
         
         view.setNeedsUpdateConstraints()
         
@@ -32,26 +39,32 @@ class ViewController: UIViewController {
             
             self.view.layoutIfNeeded()
             
-            
             let degreesToRadians: (CGFloat) -> CGFloat = {
                 return $0 / 180.0 * CGFloat(M_PI)
-                
             }
             
             let t = CGAffineTransformMakeRotation(degreesToRadians(degrees));
             self.toggleButton.transform = t
             
-            
-            
         }
         
     }
     
+    let colorSource = Colors()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         controlPanelTop.constant = -200
+        
+        print(colorPallete)
+        
+        colorPallete.delegate = self
+        colorPallete.dataSource = colorSource
+        
+        print(colorPallete.dataSource)
+        
+        colorPallete.reloadData()
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -66,10 +79,14 @@ class ViewController: UIViewController {
     }
     var chosenColor: UIColor = UIColor.blackColor()
     
-    @IBAction func chooseColor(button: UIButton) {
-        chosenColor = button.backgroundColor ?? UIColor.blackColor()
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        
+        chosenColor = cell?.backgroundColor ?? UIColor.blackColor()
         
     }
+    
     @IBAction func clearButton(sender: UIButton) {
         (view as? DrawView)?.lines = []
         
@@ -179,3 +196,47 @@ class ViewController: UIViewController {
         
     }
 }
+
+class Colors: NSObject, UICollectionViewDataSource {
+    
+    let fillColors = [
+    
+        UIColor.redColor(),
+        UIColor.blackColor(),
+        UIColor.cyanColor(),
+        UIColor.orangeColor(),
+        UIColor.greenColor()
+    
+    ]
+    
+    let strokeColors = [
+    
+        UIColor.magentaColor(),
+        UIColor.blueColor(),
+        UIColor.yellowColor(),
+        UIColor.greenColor()
+    
+    ]
+    
+    var isFill = false
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return isFill ? fillColors.count : strokeColors.count
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell =
+        collectionView.dequeueReusableCellWithReuseIdentifier("ColorCell", forIndexPath: indexPath)
+        
+        cell.backgroundColor = isFill ? fillColors[indexPath.item] : strokeColors[indexPath.item]
+        
+        return cell
+        
+    }
+    
+}
+    
+    
