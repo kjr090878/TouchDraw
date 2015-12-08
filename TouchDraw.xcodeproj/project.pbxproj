@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D1B59151BBD7DEA009F34E7 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B59141BBD7DEA009F34E7 /* ToggleButton.swift */; settings = {ASSET_TAGS = (); }; };
-		3D1B59391BBF073B009F34E7 /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B59381BBF073B009F34E7 /* TouchSlider.swift */; settings = {ASSET_TAGS = (); }; };
+		3D1B59151BBD7DEA009F34E7 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B59141BBD7DEA009F34E7 /* ToggleButton.swift */; };
+		3D1B59391BBF073B009F34E7 /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1B59381BBF073B009F34E7 /* TouchSlider.swift */; };
 		3D9951691BBC18EB00350EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9951681BBC18EB00350EDF /* AppDelegate.swift */; };
 		3D99516B1BBC18EB00350EDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D99516A1BBC18EB00350EDF /* ViewController.swift */; };
 		3D99516E1BBC18EB00350EDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D99516C1BBC18EB00350EDF /* Main.storyboard */; };
 		3D9951701BBC18EB00350EDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D99516F1BBC18EB00350EDF /* Assets.xcassets */; };
 		3D9951731BBC18EB00350EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9951711BBC18EB00350EDF /* LaunchScreen.storyboard */; };
-		3D99517B1BBC19A600350EDF /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D99517A1BBC19A600350EDF /* DrawView.swift */; settings = {ASSET_TAGS = (); }; };
+		3D99517B1BBC19A600350EDF /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D99517A1BBC19A600350EDF /* DrawView.swift */; };
+		3DEBA4221C171E1D00C088BA /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEBA4211C171E1D00C088BA /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		3D9951721BBC18EB00350EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9951741BBC18EB00350EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D99517A1BBC19A600350EDF /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		3DEBA4211C171E1D00C088BA /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				3D9951681BBC18EB00350EDF /* AppDelegate.swift */,
 				3D1B59381BBF073B009F34E7 /* TouchSlider.swift */,
+				3DEBA4211C171E1D00C088BA /* MainButton.swift */,
 				3D99516A1BBC18EB00350EDF /* ViewController.swift */,
 				3D99516C1BBC18EB00350EDF /* Main.storyboard */,
 				3D1B593A1BBF1A8B009F34E7 /* MyPlayground.playground */,
@@ -147,6 +150,7 @@
 			files = (
 				3D99516B1BBC18EB00350EDF /* ViewController.swift in Sources */,
 				3D1B59391BBF073B009F34E7 /* TouchSlider.swift in Sources */,
+				3DEBA4221C171E1D00C088BA /* MainButton.swift in Sources */,
 				3D9951691BBC18EB00350EDF /* AppDelegate.swift in Sources */,
 				3D99517B1BBC19A600350EDF /* DrawView.swift in Sources */,
 				3D1B59151BBD7DEA009F34E7 /* ToggleButton.swift in Sources */,

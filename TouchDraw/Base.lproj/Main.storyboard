@@ -46,61 +46,96 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-dy-3ec">
-                                                    <rect key="frame" x="71" y="160" width="40" height="40"/>
+                                                <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-dy-3ec" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="63" y="147" width="40" height="40"/>
                                                     <animations/>
-                                                    <state key="normal" title="S"/>
+                                                    <state key="normal" title="S" image="scribble"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sR7-HY-oxz"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-kO-O3C">
-                                                    <rect key="frame" x="181" y="160" width="40" height="40"/>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-kO-O3C" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="159" y="148" width="40" height="40"/>
                                                     <animations/>
-                                                    <state key="normal" title="R"/>
+                                                    <state key="normal" title="R" image="pat_strass_str007"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLK-Ft-3RX"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-rJ-F7G">
-                                                    <rect key="frame" x="229" y="160" width="40" height="40"/>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-rJ-F7G" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="212" y="147" width="40" height="40"/>
                                                     <animations/>
-                                                    <state key="normal" title="T"/>
+                                                    <state key="normal" title="T" image="black_up_pointing_triangle_u25B2_icon_256x256"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oai-nH-WQP"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-5n-HSS">
-                                                    <rect key="frame" x="272" y="160" width="40" height="40"/>
+                                                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-5n-HSS" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="267" y="147" width="40" height="40"/>
                                                     <animations/>
-                                                    <state key="normal" title="D"/>
+                                                    <state key="normal" title="D" image="white_diamond_suit_u2662_icon_256x256"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOO-Kd-eqG"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9f-pi-PUp">
-                                                    <rect key="frame" x="133" y="160" width="40" height="40"/>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9f-pi-PUp" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="111" y="148" width="40" height="40"/>
                                                     <animations/>
-                                                    <state key="normal" title="C"/>
+                                                    <state key="normal" title="C" image="Icon_Circles-512"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJw-lH-dXr"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-84-cx1">
-                                                    <rect key="frame" x="154" y="90" width="115" height="51"/>
+                                                    <rect key="frame" x="245" y="98" width="62" height="37"/>
                                                     <animations/>
-                                                    <state key="normal" title="Clear"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Clear">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLQ-Zw-chj"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-ks-bb6">
-                                                    <rect key="frame" x="34" y="90" width="115" height="51"/>
-                                                    <animations/>
-                                                    <state key="normal" title="Undo"/>
-                                                    <connections>
-                                                        <action selector="UndoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRP-o9-7SW"/>
-                                                        <action selector="undoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSg-sT-UKM"/>
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0Z-Q2-2qL" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
@@ -143,20 +178,48 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-xj-A2t">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-xj-A2t" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="147" width="40" height="40"/>
                                                     <animations/>
                                                     <state key="normal" title="L" image="line"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3lD-41-LMw"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-3I-zpd">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-3I-zpd" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
                                                     <animations/>
-                                                    <state key="normal" title="Button"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="23"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="4"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="toggleFillStroke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PCL-Ez-A3I"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-ks-bb6">
+                                                    <rect key="frame" x="15" y="98" width="62" height="37"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Undo">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="undoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSg-sT-UKM"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -212,6 +275,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Icon_Circles-512" width="256" height="256"/>
+        <image name="black_up_pointing_triangle_u25B2_icon_256x256" width="128" height="128"/>
         <image name="line" width="84" height="84"/>
+        <image name="pat_strass_str007" width="150" height="150"/>
+        <image name="scribble" width="100" height="100"/>
+        <image name="white_diamond_suit_u2662_icon_256x256" width="128" height="128"/>
     </resources>
 </document>

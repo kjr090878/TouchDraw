@@ -12,11 +12,7 @@ class DrawView: UIView {
     
     var lines = [Line]()
     
-    
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func drawRect(rect: CGRect) {
-        // Drawing code
         
         let context = UIGraphicsGetCurrentContext()
         
@@ -97,13 +93,7 @@ class DrawView: UIView {
                     CGContextSetLineJoin(context, .Round)
                     
                     CGContextMoveToPoint(context, start.x, start.y)
-                    
-                    //                    if line is Scribble {
-                    //
-                    //
-                    //
-                    //                    }
-                    
+               
                     if let scribble = line as? Scribble {
                         
                         CGContextAddLines(context, scribble.points, scribble.points.count)

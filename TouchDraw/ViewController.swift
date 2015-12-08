@@ -65,9 +65,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         print(colorPallete.dataSource)
         
         colorPallete.reloadData()
-        
-        
-        // Do any additional setup after loading the view, typically from a nib.
+    
     }
     
     var chosenTool: Int = 0
@@ -150,11 +148,6 @@ class ViewController: UIViewController, UICollectionViewDelegate {
             }
             
             
-            
-            /////// Shape
-            
-            
-            
             view.setNeedsDisplay()
             
         }
@@ -214,7 +207,8 @@ class Colors: NSObject, UICollectionViewDataSource {
         UIColor.magentaColor(),
         UIColor.blueColor(),
         UIColor.yellowColor(),
-        UIColor.greenColor()
+        UIColor.greenColor(),
+        UIColor.purpleColor()
     
     ]
     
