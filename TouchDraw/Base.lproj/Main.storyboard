@@ -137,6 +137,9 @@
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="strokeWidthChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Txy-Zb-qVh"/>
+                                                    </connections>
                                                 </view>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dhs-ui-sZI">
                                                     <rect key="frame" x="47" y="1" width="265" height="43"/>

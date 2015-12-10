@@ -83,7 +83,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     
     var fillColor: UIColor = UIColor.blackColor()
     var strokeColor: UIColor = UIColor.blackColor()
-    
+    var strokeWidth: CGFloat = 10
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     
@@ -92,28 +92,25 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         if colorSource.isFill {
             
             fillColor = cell?.backgroundColor ?? UIColor.blackColor()
-            
-            
-            fillStroke.backgroundColor = cell?.backgroundColor
-            
-            
+            fillStroke.backgroundColor = fillColor
             
         } else {
             
             strokeColor = cell?.backgroundColor ?? UIColor.blackColor()
-            
-            
-            
             fillStroke.borderColor = strokeColor.CGColor
-            
             fillStroke.setNeedsDisplay()
-            
             
         }
         
         
     }
 
+    @IBAction func strokeWidthChanged(sender: TouchSlider) {
+        
+       strokeWidth = sender.value
+        
+    }
+    
     
     @IBAction func clearButton(sender: UIButton) {
         (view as? DrawView)?.lines = []
@@ -145,7 +142,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
                 newScribble.strokeColor = strokeColor
                 newScribble.fillColor = fillColor
 
-                newScribble.strokeWidth = 10
+                newScribble.strokeWidth = strokeWidth
                 
                 (view as? DrawView)?.lines.append(newScribble)
                 
@@ -175,7 +172,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
                 newLine.strokeColor = strokeColor
                 newLine.fillColor = fillColor
 
-                newLine.strokeWidth = 10
+                newLine.strokeWidth = strokeWidth
 
                 
                 (view as? DrawView)?.lines.append(newLine)
@@ -199,7 +196,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         shape.fillColor = fillColor
         shape.strokeColor = strokeColor
         
-        shape.strokeWidth = 10
+        shape.strokeWidth = strokeWidth
 
         (view as? DrawView)?.lines.append(shape)
         

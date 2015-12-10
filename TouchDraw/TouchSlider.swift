@@ -10,7 +10,7 @@ import UIKit
 
 
 @IBDesignable
-class TouchSlider: UIView {
+class TouchSlider: UIControl {
     
     @IBInspectable var barColor: UIColor = UIColor.blackColor()
     @IBInspectable var value: CGFloat = 0 {
@@ -18,7 +18,7 @@ class TouchSlider: UIView {
         didSet {
             
             if value < minValue { value = minValue }
-            if value > maxValue { value = maxValue }
+            if value > maxValue { value = maxValue * 10 }
             
             setNeedsDisplay()
             
@@ -94,6 +94,7 @@ class TouchSlider: UIView {
                 
                 value = percent * maxValue
 
+                sendActionsForControlEvents(.ValueChanged)
                 
             }
             
