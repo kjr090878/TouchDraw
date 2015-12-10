@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate {
     
     
+    @IBOutlet weak var fillStroke: MainButton!
+    
+    @IBOutlet weak var strokeSlider: TouchSlider!
+    
     @IBOutlet weak var controlPanelTop: NSLayoutConstraint!
     
     @IBOutlet weak var colorPallete: UICollectionView!
@@ -18,6 +22,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     @IBAction func toggleFillStroke(sender: AnyObject) {
         
         colorSource.isFill = !colorSource.isFill
+
         
         colorPallete.reloadData()
         
@@ -75,15 +80,40 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         chosenTool = button.tag
         
     }
-    var chosenColor: UIColor = UIColor.blackColor()
+    
+    var fillColor: UIColor = UIColor.blackColor()
+    var strokeColor: UIColor = UIColor.blackColor()
+    
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
     
         let cell = collectionView.cellForItemAtIndexPath(indexPath)
         
-        chosenColor = cell?.backgroundColor ?? UIColor.blackColor()
+        if colorSource.isFill {
+            
+            fillColor = cell?.backgroundColor ?? UIColor.blackColor()
+            
+            
+            fillStroke.backgroundColor = cell?.backgroundColor
+            
+            
+            
+        } else {
+            
+            strokeColor = cell?.backgroundColor ?? UIColor.blackColor()
+            
+            
+            
+            fillStroke.borderColor = strokeColor.CGColor
+            
+            fillStroke.setNeedsDisplay()
+            
+            
+        }
+        
         
     }
+
     
     @IBAction func clearButton(sender: UIButton) {
         (view as? DrawView)?.lines = []
@@ -111,7 +141,10 @@ class ViewController: UIViewController, UICollectionViewDelegate {
                 
                 newScribble.points.append(touch.locationInView(view))
                 
-                newScribble.strokeColor = chosenColor
+                
+                newScribble.strokeColor = strokeColor
+                newScribble.fillColor = fillColor
+
                 newScribble.strokeWidth = 10
                 
                 (view as? DrawView)?.lines.append(newScribble)
@@ -139,8 +172,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
                 let newLine = Line()
                 
                 newLine.start = touch.locationInView(view)
-                newLine.strokeColor = chosenColor
+                newLine.strokeColor = strokeColor
+                newLine.fillColor = fillColor
+
                 newLine.strokeWidth = 10
+
                 
                 (view as? DrawView)?.lines.append(newLine)
                 
@@ -160,8 +196,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         
         shape.start = touch.locationInView(view)
         
-        shape.fillColor = chosenColor
+        shape.fillColor = fillColor
+        shape.strokeColor = strokeColor
         
+        shape.strokeWidth = 10
+
         (view as? DrawView)?.lines.append(shape)
         
         

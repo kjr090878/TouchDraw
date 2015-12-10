@@ -27,6 +27,9 @@ import UIKit
         @IBInspectable var borderWidth: CGFloat = 2
     
         @IBInspectable var borderColor: CGColor = UIColor.blackColor().CGColor
+    
+        
+    
     }
     
     /*

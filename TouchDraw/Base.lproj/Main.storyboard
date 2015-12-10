@@ -78,22 +78,6 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hLK-Ft-3RX"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-rJ-F7G" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
-                                                    <rect key="frame" x="212" y="147" width="40" height="40"/>
-                                                    <animations/>
-                                                    <state key="normal" title="T" image="black_up_pointing_triangle_u25B2_icon_256x256"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="21"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="2"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                    <connections>
-                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oai-nH-WQP"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-5n-HSS" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="267" y="147" width="40" height="40"/>
                                                     <animations/>
@@ -197,7 +181,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-3I-zpd" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
                                                     <animations/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="23"/>
@@ -222,8 +206,28 @@
                                                         <action selector="undoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DSg-sT-UKM"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-rJ-F7G" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
+                                                    <rect key="frame" x="212" y="147" width="40" height="40"/>
+                                                    <animations/>
+                                                    <state key="normal" title="T" image="black_up_pointing_triangle_u25B2_icon_256x256"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="21"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oai-nH-WQP"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <animations/>
+                                            <gestureRecognizers/>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="0DN-u1-4ev" appends="YES" id="6nq-Fy-URx"/>
+                                            </connections>
                                         </view>
                                         <animations/>
                                         <blurEffect style="extraLight"/>
@@ -266,12 +270,15 @@
                         <outlet property="colorPallete" destination="dhs-ui-sZI" id="Fmg-LA-6aj"/>
                         <outlet property="controlPanelTop" destination="83h-WS-8IC" id="GWr-wb-Xov"/>
                         <outlet property="controlPanelView" destination="YJN-Aa-dVR" id="QaA-pZ-Yxc"/>
+                        <outlet property="fillStroke" destination="h1k-3I-zpd" id="Q12-XU-7JD"/>
+                        <outlet property="strokeSlider" destination="p0Z-Q2-2qL" id="EE7-tl-xaI"/>
                         <outlet property="toggleButton" destination="WbA-WE-c4V" id="qw3-w5-KTn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0DN-u1-4ev"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="-331" y="94"/>
         </scene>
     </scenes>
     <resources>

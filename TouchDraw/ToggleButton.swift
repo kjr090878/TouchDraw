@@ -12,6 +12,7 @@ import UIKit
     
     @IBInspectable var strokeWidth: CGFloat = 1
     
+
     @IBInspectable var circleInset: CGFloat = 10
     
     override func drawRect(rect: CGRect) {
@@ -24,8 +25,10 @@ import UIKit
         tintColor.set()
         
         CGContextSetLineWidth(context, strokeWidth)
+
         
         CGContextStrokeEllipseInRect(context, insetRect)
+
         
         
         let midX = CGRectGetMidX(rect)
@@ -38,6 +41,7 @@ import UIKit
         CGContextAddLineToPoint(context, rect.width - circleInset - 10, midY - 3)
         
         CGContextStrokePath(context)
+
         
         
         
