@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +19,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbA-WE-c4V" customClass="ToggleButton" customModule="TouchDraw" customModuleProvider="target">
                                 <rect key="frame" x="260" y="200" width="60" height="60"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Mmv-WJ-wTk"/>
                                     <constraint firstAttribute="width" constant="60" id="sad-3r-laL"/>
@@ -48,7 +47,6 @@
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSt-dy-3ec" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="63" y="147" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="S" image="scribble"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -64,7 +62,6 @@
                                                 </button>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDi-kO-O3C" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="159" y="148" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="R" image="pat_strass_str007"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -80,7 +77,6 @@
                                                 </button>
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K72-5n-HSS" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="267" y="147" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="D" image="white_diamond_suit_u2662_icon_256x256"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -96,7 +92,6 @@
                                                 </button>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9f-pi-PUp" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="111" y="148" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="C" image="Icon_Circles-512"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -110,21 +105,8 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJw-lH-dXr"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-84-cx1">
-                                                    <rect key="frame" x="245" y="98" width="62" height="37"/>
-                                                    <animations/>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <state key="normal" title="Clear">
-                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLQ-Zw-chj"/>
-                                                    </connections>
-                                                </button>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0Z-Q2-2qL" customClass="TouchSlider" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="64" width="292" height="26"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="value">
@@ -143,7 +125,6 @@
                                                 </view>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dhs-ui-sZI">
                                                     <rect key="frame" x="47" y="1" width="265" height="43"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jtp-Qy-CL5">
                                                         <size key="itemSize" width="40" height="40"/>
@@ -158,16 +139,13 @@
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
-                                                                <animations/>
                                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                             </view>
-                                                            <animations/>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tji-xj-A2t" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="15" y="147" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="L" image="line"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -183,7 +161,6 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1k-3I-zpd" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="46" height="44"/>
-                                                    <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -198,8 +175,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvc-ks-bb6">
-                                                    <rect key="frame" x="15" y="98" width="62" height="37"/>
-                                                    <animations/>
+                                                    <rect key="frame" x="15" y="109" width="56" height="26"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                     <state key="normal" title="Undo">
@@ -211,7 +187,6 @@
                                                 </button>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hK-rJ-F7G" customClass="MainButton" customModule="TouchDraw" customModuleProvider="target">
                                                     <rect key="frame" x="212" y="147" width="40" height="40"/>
-                                                    <animations/>
                                                     <state key="normal" title="T" image="black_up_pointing_triangle_u25B2_icon_256x256"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -225,18 +200,26 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oai-nH-WQP"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdg-84-cx1">
+                                                    <rect key="frame" x="251" y="109" width="56" height="26"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <state key="normal" title="Clear">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qLQ-Zw-chj"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
-                                            <animations/>
                                             <gestureRecognizers/>
                                             <connections>
                                                 <outletCollection property="gestureRecognizers" destination="0DN-u1-4ev" appends="YES" id="6nq-Fy-URx"/>
                                             </connections>
                                         </view>
-                                        <animations/>
                                         <blurEffect style="extraLight"/>
                                     </visualEffectView>
                                 </subviews>
-                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="2Sj-Kw-Q3T"/>
@@ -247,7 +230,6 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="YJN-Aa-dVR" secondAttribute="trailing" id="6Ac-05-4vg"/>

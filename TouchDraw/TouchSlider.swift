@@ -18,7 +18,7 @@ class TouchSlider: UIControl {
         didSet {
             
             if value < minValue { value = minValue }
-            if value > maxValue { value = maxValue * 10 }
+            if value > maxValue { value = maxValue }
             
             setNeedsDisplay()
             

@@ -107,7 +107,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
 
     @IBAction func strokeWidthChanged(sender: TouchSlider) {
         
-       strokeWidth = sender.value
+       strokeWidth = CGFloat(sender.value * 10)
         
     }
     
